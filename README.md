@@ -35,15 +35,14 @@ Only dependency is `numpy`.
 
 ### The MNIST data (`mnist.npz`)
 
-You normally don't need to do anything — the script finds or fetches the data
-for you. On first use it looks for `mnist.npz` in this order:
+You normally don't need to do anything — the script fetches the data for you.
+On first use it looks for `mnist.npz` in this order:
 
 1. `./mnist.npz` (next to the script)
-2. `~/.keras/datasets/mnist.npz` (the standard Keras cache)
-3. `~/sokol/sokol/.keras/datasets/mnist.npz`
+2. `~/.keras/datasets/mnist.npz` (the standard Keras cache, if you have one)
 
-If none exist, it downloads `mnist.npz` once (~11 MB) to `./mnist.npz` from the
-official Keras mirror:
+If neither exists, it downloads `mnist.npz` once (~11 MB) to `./mnist.npz` from
+the official Keras mirror:
 
 ```
 https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
