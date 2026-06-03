@@ -1,5 +1,7 @@
 # A Pulsed Neural Network on MNIST — add-and-fire-on-overflow
 
+see Blog post https://johnsokol.blogspot.com/2026/06/there-are-far-more-efficient-ways-to.html
+
 A small, self-contained **pulsed (spiking) neural network** that classifies MNIST
 **without a single multiplication at inference.** It is a working illustration of
 a simple claim: running a neural network does not require dense floating-point
